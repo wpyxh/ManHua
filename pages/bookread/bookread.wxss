@@ -1,0 +1,39 @@
+.read-scroll{
+  position: fixed;
+  top: 0;
+  bottom: 88rpx;
+  left: 0;
+  right: 0;
+}
+
+.read-scroll .centent{
+  position: relative;
+  display: block;
+  text-indent:64rpx;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  color: #333;
+}
+
+ .btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80rpx;
+}
+ .btn text{
+  line-height: 80rpx;
+}
+ .btn .last,.next{
+  position: relative;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+.btn .last{
+  background: #fff;
+}
+.btn .next{
+  background: #d44439;
+}

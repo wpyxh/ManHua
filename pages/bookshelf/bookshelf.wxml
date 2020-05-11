@@ -1,0 +1,26 @@
+
+  <view class="search-nav">
+    <view class="search-nav-content">
+      <icon type="search" class="search-icon"></icon>
+      <input class="search-input" placeholder="搜索小说" bindinput="input"  
+       placeholder-class="place" value="{{searchValue}}"
+       type="text"></input>
+      <icon type="clear" class="clear-icon" size="30rpx" bindtap="clearClick"></icon>
+    </view>
+    <view class="cancle">
+      <text bindtap="cancleClick">取消</text>
+    </view>
+  </view>
+  <view class="xian"></view>
+
+    
+
+  <scroll-view class="search-scroll" scroll-y="true">
+  <view class="no-coll" hidden="{{isShow}}">
+    <image src="https://m.kanman.com/static/images/status/mascot-fish.png">
+    </image>
+    <text>主人, 请点击搜索哦～</text>
+    </view>
+    <booksearch searchData="{{searchData}}"></booksearch>
+  </scroll-view>
+

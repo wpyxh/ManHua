@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "searchItem":"../../components/searchItem/searchItem"
+  }
+}

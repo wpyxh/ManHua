@@ -1,0 +1,72 @@
+<scroll-view class="details-scroll" scroll-y="true">
+  <view class="details-top">
+    <view class="bg-img"></view>
+    <view class="bg"></view>
+    <view class="bg-bottom"></view>
+    <image class="bg-centent-img" 
+    src="{{'https://images.weserv.nl/?url='+cartoonInfo.data.cover}}" bindload="imgDefault" hidden="{{imgDefault}}"
+    ></image>
+    <image src="../../assets/img/placeholder.png" class="bg-centent-img" hidden="{{!imgDefault}}"></image>
+    <view class="cartoon-introduce">
+      <text class="name">{{cartoonInfo.data.name}}</text>
+      <text class="author">作者： {{cartoonInfo.data.author}}</text>
+      <view class="tag">
+      <text class="tag-title">主题：  </text><text class="tag">{{cartoonInfo.data.tag}}
+      </text>
+      </view>
+<view class="cartoon-introduce-btn">
+        <view class="start-ready" bindtap="startRead">
+        <image 
+        src="https://static.yzkimage.com/www/images/icoRead.png"></image>
+        <text>开始阅读</text>
+        </view>
+        <view class="collection" bindtap="collClick">
+        <image 
+        src="https://static.yzkimage.com/www/images/icoCollect.png"></image>
+        <text>收藏</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="details-bottom">
+    <view class="details-bottom-tab">
+      <text bindtap="tDetails"
+    class="tab-details {{tabIndex===1?'details-tab-active':''}}">详情</text>
+      <text bindtap="tAnthology"
+      class="tab-anthology {{tabIndex===2?'details-tab-active':''}}">选集         </text>
+    </view>
+    
+    <view class="details-content" hidden="{{tabIndex!=1}}">
+      <text class="details-content-introduce">{{cartoonInfo.data.introduce}}</text>
+      <view class="biaoqin">
+        <text>(╯‵□′)╯︵┻━┻</text>
+        <text>主人没有更多了呢~</text>
+      </view>
+    </view>
+
+    <view class="anthology-content" hidden="{{tabIndex!=2}}">
+      <view class="anthology-title">
+        <text class="at-quan">全部章节</text>
+        <text class="at-hua">{{"("+cartoonInfo.list.length+"话)"}}</text>
+        <view class="daoxu" bindtap="daoxuClick">
+          <image src="https://static.yzkimage.com/h5/images/icoPaixu@2x.png"></image>
+          <text>{{daoxu}}</text>
+        </view>
+      </view>
+
+      <view class="anthology-item" wx:for="{{anthology}}" wx:key="url"
+      wx:for-index="anthIndex" wx:for-item="anthItem"
+      bindtap="anthlogyClick" data-index="{{anthIndex}}">
+        <text>{{anthIndex+1+" -"+anthItem.num}}</text>
+      </view>
+
+      <view class="biaoqin" wx:if="{{anthology.length===0}}">
+        <text>(╯‵□′)╯︵┻━┻</text>
+        <text>主人没有更多了呢~</text>
+      </view>
+    </view>
+
+  </view>
+</scroll-view>

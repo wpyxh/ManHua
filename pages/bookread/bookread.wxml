@@ -1,0 +1,13 @@
+<scroll-view class="read-scroll" scroll-y="ture" 
+scroll-top="{{toNum}}">
+  <text class="centent" wx:for="{{cartoonData}}" wx:key="item">{{item}}</text>
+</scroll-view>
+
+  <view class="btn">
+    <view class="last" bindtap="lastClick">
+      <text>上一章</text>
+    </view>
+    <view class="next" bindtap="nextClick">
+      <text>下一章</text>  
+    </view>
+  </view>

@@ -1,0 +1,18 @@
+<scroll-view class="updata" scroll-y="true" refresher-enabled="true">
+  <view class="updata-item" wx:for="{{date}}" wx:key="time"
+  wx:for-item="item" wx:for-index="index">
+    <text class="updata-time">{{item.time}}</text>
+    <scroll-view class="updata-content" scroll-x="true">
+      <view class="cartoon-item" wx:for="{{item.cartoon}}" 
+      bindtap="imgClick" data-url="{{cartoon.url}}"
+      wx:for-item="cartoon" wx:for-index="cartoonIndex" wx:key="url"  
+      wx:if="{{cartoonIndex>0&&cartoonIndex<=30}}">
+        <image class="cartoon-img" src="{{'https://images.weserv.nl/?url='+cartoon.cover}}"></image>
+        <view class="cartoon-name">
+          <text>{{cartoon.name}}</text>
+        </view>
+        
+      </view>
+    </scroll-view>
+  </view>
+</scroll-view>

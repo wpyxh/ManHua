@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/read/read",
+    "pages/details/details",
+    "pages/updata/updata",
+    "pages/search/search",
+    "pages/category/category",
+    "pages/collection/collection",
+    "pages/bookshelf/bookshelf",
+    "pages/more/more",
+    "pages/ranking/ranking",
+    "pages/bookdetails/bookdetails",
+    "pages/bookread/bookread"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#d44439",
+    "navigationBarTitleText": "yxh漫画",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#3c3c3c",
+    "list": [
+      {
+        "pagePath": "pages/updata/updata",
+        "text": "更新",
+        "iconPath": "assets/img/gengxin.png",
+        "selectedIconPath": "assets/img/gengxin1.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "推荐",
+        "iconPath": "assets/img/tuijian.png",
+        "selectedIconPath": "assets/img/tuijian1.png"
+      },
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "text": "书架",
+        "iconPath": "assets/img/shujia.png",
+        "selectedIconPath": "assets/img/shujia1.png"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "收藏",
+        "iconPath": "assets/img/shoucang.png",
+        "selectedIconPath": "assets/img/shoucang1.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+.category-scroll{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.category-content,.es-content{
+  position: relative;
+  height: 330rpx;
+  padding-left: 30rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.es-content{
+  height: 60rpx;
+}
+.category-item,.end-series{
+  display: inline-block;
+  width: 144rpx;
+  height: 40rpx;
+  padding:0 16rpx;
+  margin-top: 16rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  white-space: nowrap;
+  color: rgb(102,102,102);
+  font-size: 28rpx;
+}
+.category-item-active{
+  background-color: rgba(255, 214, 17, .5);
+  color: #000;
+}
+.cate-cartoon{
+  position: relative;
+  width: 32%;
+  height: 400rpx;
+  margin:0  0.65%;
+  float: left;
+  margin-top: 20rpx;
+}
+.cate-cartoon image{
+  width: 100%;
+  height: 316rpx;
+}
+.cate-cartoon .name,.latest{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40rpx;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cate-cartoon .name{
+  font-weight: 700;
+  color: #333;
+  font-size: 28rpx;
+}
+.cate-cartoon .latest{
+  color: #aaa;
+  font-size: 24rpx;
+}

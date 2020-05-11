@@ -1,0 +1,219 @@
+.details-scroll{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.details-top{
+  position: relative;
+  width: 100%;
+  height: 600rpx;
+}
+.details-top .bg-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ background-image:url(https://images.weserv.nl/?url=https://img.detatu.com/upload/vod/2019-01-07/154679433110.jpg);
+ background-size: 100% 100%;
+ filter: blur(40rpx);
+}
+.details-top .bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
+}
+.details-top .bg-bottom{
+  position: absolute;
+  width: 100%;
+  height: 500rpx;
+  bottom: 0;
+  background: rgb(254, 254, 254);
+  border-radius: 20rpx 20rpx 0 0;
+}
+.details-top .bg-centent-img{
+  position: absolute;
+  bottom: 90rpx;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 320rpx;
+  height: 470rpx;
+  box-shadow: 0 0 60rpx rgba(0,0,0,.5);
+  border-radius: 12rpx;
+}
+.details-top .cartoon-introduce{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 350rpx;
+  height: 500rpx;
+}
+.details-top .cartoon-introduce text{
+  position: relative;
+  display: inline-block;
+  margin-top: 20rpx;
+  color: rgb(102,102,102);
+  font-size: 28rpx;
+}
+.details-top .cartoon-introduce .name{
+  font-weight: 600;
+  width: 100%;
+  height: 120rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  color: rgb(51,51,51);
+  font-size: 48rpx;
+}
+.details-top .cartoon-introduce .tag{
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.details-top .cartoon-introduce .tag .tag-title{
+  display: inline-block;
+  white-space: nowrap;
+  height: 40rpx;
+  width: 90rpx;
+}
+.cartoon-introduce-btn{
+  margin-top: 50rpx;
+  position: relative;
+  width: 50%;
+  height: 60rpx;
+  display: flex;
+}
+.cartoon-introduce-btn .start-ready{
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  height: 60rpx;
+}
+.cartoon-introduce-btn .start-ready{
+  background-color: rgb(255,214,17);
+  border-radius: 50rpx;
+  color: rgb(142,28,42);
+  font-size: 24rpx;
+}
+.cartoon-introduce-btn .start-ready text{
+  color: rgb(142,28,42);
+  font-size: 24rpx;
+  line-height: 20rpx;
+}
+.cartoon-introduce-btn .start-ready image{
+  width: 34rpx;
+  height: 30rpx;
+  line-height: 40rpx;
+}
+
+.details-bottom{
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+.details-bottom .details-bottom-tab{
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  font-size: 36rpx;
+  padding-bottom: 40rpx;
+}
+
+.details-bottom .details-bottom-tab .tab-details{
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-150%);
+  display: inline-block;
+  height: 100%;
+  width: 100rpx;
+  line-height: 80rpx;
+  padding: 0 10rpx 6rpx 10rpx;
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+.details-bottom .details-bottom-tab .tab-anthology{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100rpx;
+  line-height: 80rpx;
+  padding: 0 10rpx 6rpx 10rpx;
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+.details-tab-active{
+    border-bottom: 3px solid #FFD611;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+
+.details-content .details-content-introduce{
+  position: relative;
+  color: rgb(102,102,102);
+}
+ .biaoqin{
+  position: relative;
+  margin-top: 40rpx;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 50rpx;
+  font-size: 24rpx;
+  display: flex;
+  flex-wrap: wrap;
+  width:210rpx;
+  color: rgb(170, 170, 170);
+}
+
+.anthology-content{
+  position: relative;
+  width: 690rpx;
+  margin-left: 30rpx;
+}
+.anthology-content .anthology-title{
+  width: 100%;
+  height: 66rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.anthology-content .anthology-title .at-quan{
+  color: rgb(51, 51, 51);
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-right: 20rpx;
+}
+.anthology-content .anthology-title .at-hua{
+  color: rgb(153, 153, 153);
+  font-size: 24rpx;
+}
+.anthology-content .anthology-title .daoxu{
+  position: absolute;
+  right: 0;
+  width: 140rpx;
+  height: 34rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  color: rgb(51, 51, 51);
+}
+.anthology-content .anthology-title .daoxu image{
+  width: 24rpx;
+  height: 24rpx;
+  padding-right: 10rpx;
+}
+.anthology-item{
+  width: 100%;
+  height: 66rpx;
+  border-bottom: 1rpx solid #eee;
+  margin-top: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.anthology-item text{
+  color: rgb(51, 51, 51);
+  font-size: 30rpx;
+  font-weight: 600;
+}

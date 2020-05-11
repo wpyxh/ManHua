@@ -1,0 +1,95 @@
+.shaonianrexue{
+  position: relative;
+  width: 100%;
+  height: 1020rpx;
+  margin-top: 40rpx;
+}
+.shaonianrexue .title{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 92rpx;
+}
+.shaonianrexue .title .title-center{
+  position: absolute;
+  width: 100%;
+  height: 52rpx;
+  top: 20rpx;
+}
+.shaonianrexue .title .title-center .title-title{
+  position: relative;
+  margin-left: 2.4%;
+  font-weight: 700;
+  font-size: 32rpx;
+  color: #333;
+}
+.shaonianrexue-cartoon{
+  position: absolute;
+  top: 92rpx;
+  width: 100%;
+  height: 840rpx;
+  overflow: hidden;
+}
+.shaonianrexue-cartoon .cartoon-item{
+  width: 32.7%;
+  height: 420rpx;
+  margin-right: 0.95%;
+  float: left;
+  position: relative;
+}
+.shaonianrexue-cartoon :nth-child(3),:nth-child(6){
+  margin-right: 0;
+}
+.shaonianrexue-cartoon :nth-child(6){
+  margin-right: 0;
+}
+.shaonianrexue-cartoon .cartoon-item .cartoon-img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 317rpx;
+}
+.shaonianrexue-cartoon .cartoon-item .cartoon-item-title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 103rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+.shaonianrexue-cartoon .cartoon-item .cartoon-item-title .cartoon-name{
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #333;
+}
+.shaonianrexue-cartoon .cartoon-item .cartoon-item-title .cartoob-collection{
+  font-size: 24rpx;
+  color: #aaa;
+}
+.shaonianrexue-btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 88rpx;
+}
+.shaonianrexue .more,.change{
+  width: 45%;
+  box-sizing: border-box;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 2rpx solid rgb(204,204,204);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+  color: #333;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+}
+.shaonianrexue .more-img,.change-img{
+  width: 24rpx;
+  height: 24rpx;
+}

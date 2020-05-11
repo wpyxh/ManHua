@@ -1,0 +1,87 @@
+
+.search-nav{
+  width: 100%;
+  height: 88rpx;
+  position: relative;
+}
+.search-nav .search-nav-content{
+  position: absolute;
+  width: 610rpx;
+  height: 56rpx;
+  top: 16rpx;
+  left: 0;
+  display: flex;
+  margin: 0 20rpx;
+  background: #F3F5F5;
+  border-radius: 40rpx;
+}
+.search-nav .search-nav-content .search-input{
+  background: #F3F5F5;
+  width: 554rpx;
+  height: 100%
+}
+.place{
+  font-size: 28rpx;
+}
+.search-nav .search-nav-content .search-icon,.clear-icon{
+  width: 40rpx;
+  height: 56rpx;
+  margin: 0 10rpx;
+  margin-right: 20rpx;
+  margin-top: 5rpx;
+}
+.search-nav .search-nav-content .clear-icon{
+  margin-right: 10rpx;
+  margin-top: 6px;
+}
+.cancle{
+  position: absolute;
+  width: 100rpx;
+  height: 56rpx;
+  top: 16rpx;
+  right: 0;
+  font-size: 28rpx;
+  text-align: center;
+}
+.cancle text{
+  line-height: 56rpx;
+}
+.xian{
+  width: 100%;
+  height: 2rpx;
+  background: rgb(250, 250, 250);
+}
+.search-scroll{
+  position: absolute;
+  top:90rpx;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  background-color: rgb(250, 250, 250);
+}
+
+.no-coll{
+  position: relative;
+  width: 100%;
+  height: 750rpx;
+}
+.no-coll image{
+  position:relative;
+  width: 240rpx;
+  height: 240rpx;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.no-coll text{
+  position: relative;
+  display: inline-block;
+  width: 560rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  color: #999;
+  font-size: 24rpx;
+  top: 240rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}

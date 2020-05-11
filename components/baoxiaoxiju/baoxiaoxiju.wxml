@@ -1,0 +1,32 @@
+
+<view class="baoxiaoxiju">
+  <view class="title">
+    <view class="title-center">
+    <text class="title-title">搞笑time! 快来领取你的限定快乐~</text>
+    </view>
+  </view>
+
+  <view class="baoxiaoxiju-cartoon">
+      <view class="cartoon-item"  wx:for="{{baoxiaoxiju}}"
+      bindtap="imgClick" data-url="{{item.url}}"
+      wx:key="url" wx:if="{{index>=startNumber&&index<=endNumber}}">
+      <image class="cartoon-img" lazy-load="true" src="{{'https://images.weserv.nl/?url='+item.cover}}"></image>
+      <view class="cartoon-item-title">
+        <text class="cartoon-name">{{item.name}}</text>
+        <text class="cartoob-collection">爆笑  喜剧</text>
+      </view>
+    </view>
+    </view>
+
+    <view class="baoxiaoxiju-btn">
+      <view class="more" bindtap="baoxiaoxiju">
+      <image class="more-img" lazy-load="true" src="https://ae01.alicdn.com/kf/H9257444aab8648cba164a4fc475187b5t.jpg"></image>
+        更多
+      </view>
+      <view class="change" bindtap="change">
+      <image class="change-img" lazy-load="true" src="https://ae01.alicdn.com/kf/H2879ddc218be46f4aa2a98824787ec44t.jpg"></image>
+        换一批
+      </view>
+    </view>
+</view>
+

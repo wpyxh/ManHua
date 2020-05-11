@@ -1,0 +1,54 @@
+.updata{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.updata-item{
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  margin: 20rpx;
+}
+.updata-item .updata-time{
+  display: inline-block;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+}
+.updata-content{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 320rpx;
+  width: 100%;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.updata-content .cartoon-item{
+  height: 100%;
+  width: 200rpx;
+  display: inline-block;
+  position: relative;
+  margin-right: 16rpx;
+}
+.updata-content .cartoon-item .cartoon-img{
+  width: 100%;
+  height: 260rpx;
+  position: relative;
+  border-radius: 13rpx 10rpx 13rpx 10rpx;
+}
+
+.updata-content .cartoon-item .cartoon-name{
+  width: 100%;
+  height: 60rpx;
+  position: absolute;
+  bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 28rpx;
+  font-weight: 700;
+}

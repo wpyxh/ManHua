@@ -1,0 +1,27 @@
+<scroll-view class="collection-scroll" scroll-y="true">
+  <view class="coll-tab">
+      <text bindtap="collClick"
+      class="coll {{isTabACtive===1?'coll-tab-active':''}}">收藏</text>
+      <text bindtap="histClick"
+      class="hist {{isTabACtive===2?'coll-tab-active':''}}">历史                  </text>
+  </view>
+
+  <view class="coll-item" wx:for="{{collData}}" hidden="{{isTabACtive!=1}}"
+  wx:for-item="collItem" data-url="{{collItem.url}}" wx:key="url"
+  >
+    <image src="{{'https://images.weserv.nl/?url='+collItem.cover}}" 
+    bindload="imgLoad"></image>
+    <text>{{collItem.name}}</text>
+  </view>
+
+  <view class="no-coll" wx:if="{{isTabACtive===1&&isCollShow===1}}">
+    <image src="https://m.kanman.com/static/images/status/mascot-fish.png">
+    </image>
+    <text>主人, 暂时没有收藏漫画哦～</text>
+  </view>
+  <view class="no-coll" wx:if="{{isTabACtive===2}}">
+    <image src="https://m.kanman.com/static/images/status/mascot-fish.png">
+    </image>
+    <text>主人, 暂时没有阅读历史哦～</text>
+  </view>
+</scroll-view>

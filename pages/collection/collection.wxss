@@ -1,0 +1,94 @@
+.collection-scroll{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.coll-tab{
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  font-size: 36rpx;
+  padding-bottom: 40rpx;
+  color: rgb(170, 170, 170);
+}
+
+.coll-tab .coll{
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-150%);
+  display: inline-block;
+  height: 100%;
+  width: 100rpx;
+  line-height: 80rpx;
+  padding: 0 10rpx 0 10rpx;
+  text-align: center;
+}
+.coll-tab .hist{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100rpx;
+  line-height: 80rpx;
+  padding: 0 10rpx 0 10rpx;
+  text-align: center;
+}
+.coll-tab-active{
+    border-bottom: 3px solid #FFD611;
+    font-weight: 700;
+    color: #000;
+}
+
+.no-coll{
+  position: relative;
+  width: 100%;
+  height: 750rpx;
+}
+.no-coll image{
+  position:relative;
+  width: 240rpx;
+  height: 240rpx;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.no-coll text{
+  position: relative;
+  display: inline-block;
+  width: 560rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  color: #999;
+  font-size: 24rpx;
+  top: 240rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coll-item{
+  position: relative;
+  width: 32%;
+  height: 400rpx;
+  margin:0  0.65%;
+  float: left;
+  margin-top: 20rpx;
+}
+.coll-item image{
+  height: 316rpx;
+  width: 100%;
+}
+.coll-item text{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40rpx;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #333;
+  font-size: 28rpx;
+}

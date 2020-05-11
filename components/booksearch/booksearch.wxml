@@ -1,0 +1,20 @@
+
+
+<view class="search-item" wx:for="{{searchData}}" wx:key="url" 
+bindtap="searchItemClick" data-url="{{item.url}}"
+wx:if="{{item.url!=''}}">
+  <image  class="search-item-img" src="{{item.cover}}" lazy-load="true" binderror="imgerror"
+  data-url="{{item.url}}"></image>
+  <view class="cartoon-info">
+    <view class="cartoon-conent">
+      <text class="name">{{item.name}}</text>
+      <text class="latest">{{item.author}}</text>
+      <view class="tag" wx-if="{{item.tag}}">
+      <text class="tag-text">{{item.tag}}</text>
+      </view>
+    </view>
+    <view class="start">
+      <text class="btn">开始</text>
+    </view>
+  </view>
+</view>

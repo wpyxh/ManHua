@@ -1,0 +1,44 @@
+<scroll-view class="recommend-scroll" scroll-y="true"
+  refresher-enabled="true">
+  <swiper indicator-dots="true" autoplay="true" interval="3000"
+  duration="500" circular="true" class="banner" >
+    <swiper-item wx:for="{{banner}}" wx:key="url" class="banner-item"
+    bindtap="imgClick" data-url="{{item.url}}"
+    ><image class="banner-img" lazy-load="true" src="{{item.cover}}"></image></swiper-item>
+  </swiper>
+
+  <view class="recommend-search" bindtap="searchClick">
+  <icon class="icon-search" type="search" color="white"></icon>
+  </view>
+
+  <view class="navbar">
+    <view class="bar-list" wx:for="{{navbar}}" wx:key="url" 
+     bindtap="barItemClick" data-path="{{item.path}}" data-title="{{item.title}}">
+      <image src="{{item.url}}" lazy-load="true" ></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  
+  <view class="adver">
+    <image lazy-load="true" src="https://ae01.alicdn.com/kf/H3a88dd42196f42f8b41af375cf06e68al.jpg"></image>
+  </view>
+
+  <yxhRecommendation 
+  yxhRecommendation="{{yxhRecommendation}}"></yxhRecommendation>
+
+  <tadayUpdata tadayUpdata="{{tadayUpdata}}"></tadayUpdata>
+
+  <kongbulinyi kongbu="{{kongbu}}"></kongbulinyi>
+
+  <shaonianrexue shaonianrexue="{{shaonianrexue}}"></shaonianrexue>
+
+  <lianaishenghuo lianaishenghuo="{{lianaishenghuo}}"></lianaishenghuo>
+
+  <shaonvaiqing shaonvaiqing="{{shaonvaiqing}}"></shaonvaiqing>
+
+  <baoxiaoxiju baoxiaoxiju="{{baoxiaoxiju}}"></baoxiaoxiju>
+
+  <zhentantuili zhentantuili="{{zhentantuili}}"></zhentantuili>
+  
+</scroll-view>
+

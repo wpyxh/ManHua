@@ -1,0 +1,31 @@
+<scroll-view class="category-scroll" scroll-y="true">
+  <view class="category-content">
+    <view 
+    class="category-item {{categoryIndex===seleIndex?'category-item-active':''}}"   
+    bindtap="categoryItemClick"
+    wx:for="{{category}}" wx:for-index="categoryIndex" 
+    data-categoryindex="{{categoryIndex}}"
+    wx:for-item="categoryItem" data-mhlb="{{categoryItem.mhlb}}" wx:key="mhlb">
+      <text>{{categoryItem.name}}</text>
+    </view>
+  </view>
+
+ <view class="es-content">
+  <view class="end-series {{endSeriesIndex===esIndex?'category-item-active':''}}" 
+  bindtap="endSeriesClick"
+    wx:for="{{endSeries}}" wx:for-index="endSeriesIndex" 
+    data-endseriesindex="{{endSeriesIndex}}"
+    wx:for-item="endSeriesItem" data-mhlb="{{endSeriesItem.mhlb}}" wx:key="mhlb">
+  <text>{{endSeriesItem.name}}</text>
+  </view>
+ </view>
+
+  <view class="cate-cartoon" wx:for="{{cartoonData}}" wx:for-item="cartoonItem"
+  bindtap="imgClick" data-url="{{cartoonItem.url}}"
+  wx:for-index="cartoonIndex" wx:key="url"
+  wx:if="{{cartoonIndex>0}}">
+    <image src="{{'https://images.weserv.nl/?url='+cartoonItem.cover}}"></image>
+    <text class="name">{{cartoonItem.name}}</text>
+    <text class="latest">{{cartoonItem.latest}}</text>
+  </view>
+</scroll-view>

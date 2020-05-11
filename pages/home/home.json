@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "yxhRecommendation":"../../components/yxhRecommendation/yxhRecommendation",
+    "kongbulinyi":"../../components/kongbulinyi/kongbulinyi",
+    "shaonianrexue": "../../components/shaonianrexue/shaonianrexue",
+    "lianaishenghuo": "../../components/lianaishenghuo/lianaishenghuo",
+    "tadayUpdata": "../../components/tadayUpdata/tadayUpdata",
+    "shaonvaiqing": "../../components/shaonvaiqing/shaonvaiqing",
+    "baoxiaoxiju": "../../components/baoxiaoxiju/baoxiaoxiju",
+    "zhentantuili": "../../components/zhentantuili/zhentantuili"
+  }
+}

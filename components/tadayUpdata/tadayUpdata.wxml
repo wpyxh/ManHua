@@ -1,0 +1,41 @@
+
+<view class="taday-updata">
+  <view class="title">
+    <view class="title-center">
+    <text class="title-title">本周更新</text>
+    <text class="tips">(👈请往左滑)</text>
+    </view>
+  </view>
+
+
+  <view class="taday-updata-cartoon">
+    <image class="background-img"  lazy-load="true" src="https://wj1-f2.kkmh.com/image/190913/NmBfQfwQT.webp-fe.w360.jpg.m.i1"></image>
+    <view class="background"></view>
+      
+<scroll-view class="taday-upadta-scroll" scroll-x="true" scroll-left="true">
+  <view class="cartoon-item"  wx:for="{{tadayUpdata}}"
+  bindtap="imgClick" data-url="{{item.url}}"
+      wx:key="url" wx:if="{{index>=1&&index<=50}}">
+      <image class="cartoon-img" lazy-load="true" src="{{'https://images.weserv.nl/?url='+item.cover}}"></image>
+      <view class="cartoon-item-title">
+        <text class="cartoon-name">{{item.name}}</text>
+        <text class="cartoob-collection">最新漫画</text>
+      </view>
+    </view>
+
+    <view class="cartoon-second">
+    <view class="cartoon-item"  wx:for="{{tadayUpdata}}"
+      wx:key="url" wx:if="{{index>=51&&index<=99}}">
+      <image class="cartoon-img" lazy-load="true" src="{{'https://images.weserv.nl/?url='+item.cover}}"></image>
+      <view class="cartoon-item-title">
+        <text class="cartoon-name">{{item.name}}</text>
+        <text class="cartoob-collection">最新漫画</text>
+      </view>
+    </view>
+    </view>
+</scroll-view>
+
+    </view>
+</view>
+
+

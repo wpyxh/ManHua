@@ -1,0 +1,32 @@
+
+<view class="shaonvaiqing">
+  <view class="title">
+    <view class="title-center">
+    <text class="title-title">在？ 谈个恋爱？</text>
+    </view>
+  </view>
+
+  <view class="shaonvaiqing-cartoon">
+      <view class="cartoon-item"  wx:for="{{shaonvaiqing}}"
+      bindtap="imgClick" data-url="{{item.url}}"
+      wx:key="url" wx:if="{{index>=startNumber&&index<=endNumber}}">
+      <image class="cartoon-img" lazy-load="true" src="{{'https://images.weserv.nl/?url='+item.cover}}"></image>
+      <view class="cartoon-item-title">
+        <text class="cartoon-name">{{item.name}}</text>
+        <text class="cartoob-collection">少女  爱情</text>
+      </view>
+    </view>
+    </view>
+
+    <view class="shaonvaiqing-btn">
+      <view class="more" bindtap="shaonvaiqing">
+      <image class="more-img" lazy-load="true" src="https://ae01.alicdn.com/kf/H9257444aab8648cba164a4fc475187b5t.jpg"></image>
+        更多
+      </view>
+      <view class="change" bindtap="change">
+      <image class="change-img" lazy-load="true" src="https://ae01.alicdn.com/kf/H2879ddc218be46f4aa2a98824787ec44t.jpg"></image>
+        换一批
+      </view>
+    </view>
+</view>
+

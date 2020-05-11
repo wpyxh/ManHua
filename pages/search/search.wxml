@@ -1,0 +1,50 @@
+
+  <view class="search-nav">
+    <view class="search-nav-content">
+      <icon type="search" class="search-icon"></icon>
+      <input class="search-input" placeholder="搜索作品名" bindinput="input"  
+       placeholder-class="place" value="{{searchValue}}"
+       type="text"></input>
+      <icon type="clear" class="clear-icon" size="30rpx" bindtap="clearClick"></icon>
+    </view>
+    <view class="cancle">
+      <text bindtap="cancleClick">取消</text>
+    </view>
+  </view>
+  <view class="xian"></view>
+
+  <scroll-view class="search-scroll" scroll-y="true">
+    <view wx:if="{{searchValue==''}}">
+      <view class="hot-search">
+      <view class="hot-search-title">
+        <text>热门搜索</text>
+        <image  bindtap="refreshHot"        src="https://static3w.kuaikanmanhua.com/static-kkfront-mobile/image/shuaxin.57fd892.png"></image>
+      </view>
+
+      <view class="hot-search-content">
+        <view class="hot-search-name" wx:for="{{hotSearch}}"
+        bindtap="imgClick" data-url="{{item.url}}"
+        wx:key="url" wx:if="{{index>=start&&index<=end}}">
+        <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+
+  <view class="search-history">
+  <view class="search-history-title">
+    <text>历史搜索</text>
+    <image src="https://static.yzkimage.com/h5/images/icoDelete@2x.png" 
+    bindtap="removeHistory"></image>
+  </view>
+  <view class="history-item" wx:for="{{history}}" wx:for-item="hisItem" 
+  wx:key="hisItem" bindtap="historyClick" data-histext="{{hisItem}}">
+    <icon type="waiting" size="28rpx" color="#999"></icon>
+    <text>{{hisItem}}</text>
+  </view>
+  </view>
+    </view>
+
+    <searchItem wx:if="{{searchValue!=''}}" searchData="{{searchData}}" 
+    bind:storageHistory="storageHistory"></searchItem>
+  </scroll-view>
+

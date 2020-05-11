@@ -1,0 +1,13 @@
+<scroll-view class="read-scroll" scroll-y="ture"
+bindscroll="scroll" scroll-top="{{toNum}}">
+<image wx:for="{{cartoonData}}" wx:key="item" lazy-load="true" src="{{'https://images.weserv.nl/?url='+item.img}}" mode="widthFix"></image>
+</scroll-view>
+
+  <view class="btn" hidden="{{isShowBtn}}">
+    <view class="last" bindtap="lastClick">
+      <text>上一话</text>
+    </view>
+    <view class="next" bindtap="nextClick">
+      <text>下一话</text>  
+    </view>
+  </view>

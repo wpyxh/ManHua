@@ -1,0 +1,150 @@
+
+.search-nav{
+  width: 100%;
+  height: 88rpx;
+  position: relative;
+}
+.search-nav .search-nav-content{
+  position: absolute;
+  width: 610rpx;
+  height: 56rpx;
+  top: 16rpx;
+  left: 0;
+  display: flex;
+  margin: 0 20rpx;
+  background: #F3F5F5;
+  border-radius: 40rpx;
+}
+.search-nav .search-nav-content .search-input{
+  background: #F3F5F5;
+  width: 554rpx;
+  height: 100%
+}
+.place{
+  font-size: 28rpx;
+}
+.search-nav .search-nav-content .search-icon,.clear-icon{
+  width: 40rpx;
+  height: 56rpx;
+  margin: 0 10rpx;
+  margin-right: 20rpx;
+  margin-top: 5rpx;
+}
+.search-nav .search-nav-content .clear-icon{
+  margin-right: 10rpx;
+  margin-top: 6px;
+}
+.cancle{
+  position: absolute;
+  width: 100rpx;
+  height: 56rpx;
+  top: 16rpx;
+  right: 0;
+  font-size: 28rpx;
+  text-align: center;
+}
+.cancle text{
+  line-height: 56rpx;
+}
+.xian{
+  width: 100%;
+  height: 2rpx;
+  background: rgb(250, 250, 250);
+}
+.search-scroll{
+  position: absolute;
+  top:90rpx;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  background-color: rgb(250, 250, 250);
+}
+.hot-search{
+  position: relative;
+  width: 100%;
+  height: 680rpx;
+  background: #fff;
+}
+.hot-search .hot-search-title{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  right: 20rpx;
+  height: 44rpx;
+}
+.hot-search .hot-search-title text{
+  position: absolute;
+  left: 0;
+  font-size: 24rpx;
+  line-height: 44rpx;
+  color: rgb(170, 170, 170);
+}
+.hot-search .hot-search-title image{
+  position: absolute;
+  right: 0;
+  width: 64rpx;
+  height: 44rpx;
+}
+.hot-search .hot-search-content{
+  position: absolute;
+  bottom: 0;
+  left: 20rpx;
+  right: 20rpx;
+  height: 600rpx;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-search .hot-search-content .hot-search-name{
+  height: 74rpx;
+  padding: 0 20rpx;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 40rpx;
+}
+.hot-search .hot-search-content .hot-search-name text{
+  line-height: 74rpx;
+  padding: 0 20rpx;
+  color: #000;
+  font-size: 24rpx;
+}
+.search-history{
+  width: 100%;
+  position: relative;
+  margin-top: 10rpx;
+  background: #fff;
+}
+.search-history .search-history-title{
+  position: relative;
+  margin-left: 20rpx;
+  padding: 40rpx 0;
+  width: 710rpx;
+  height: 40rpx;
+  font-size: 32rpx;
+  color: rgb(170, 170, 170);
+}
+.search-history .search-history-title image{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  padding-top: 6rpx;
+  right: 0;
+}
+.search-history .history-item{
+  position: relative;
+  height: 40rpx;
+  margin-left: 20rpx;
+  padding-bottom: 20rpx;
+  width: 710rpx;
+}
+.search-history .history-item text{
+  margin-left: 20rpx;
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  font-size: 32rpx;
+}

@@ -1,0 +1,32 @@
+<view class="ranking-tab">
+  <text wx:for="{{rankingTitle}}" class="tab-item {{index===isActive?'tab-item-active':''}}"  wx:key="item" bindtap="barItemClick" 
+  data-index="{{index}}" data-mhlb="{{item.data}}">{{item.title}}</text>
+</view>
+
+<scroll-view class="ranking-scroll" scroll-y="true">
+
+  <view class="ranking-item" wx:for="{{cartoonData}}" wx:key="url" 
+  bindtap="imgClick" data-url="{{item.url}}"
+  wx:if="{{index>0&&index<=30}}">
+    <image class="ranking-item-img" src="{{'https://images.weserv.nl/?url='+item.cover}}"></image>
+
+    <view class="ranking-item-title">
+      <text class="cartoon-name">{{item.name}}</text>
+      <text class="cartoon-latest">{{item.latest}}</text>
+      <text class="cartoon-time">{{item.time}}</text>
+      <text class="cartoon-btn">点击阅读</text>
+    </view>
+
+    <view class="cartoon-top">
+      <image wx:if="{{index==1}}"
+      src="https://static.yzkimage.com/h5/images/ico1@2x.png"></image>
+      <image wx:if="{{index==2}}"
+      src="https://static.yzkimage.com/h5/images/ico2@2x.png"></image>
+      <image wx:if="{{index==3}}"
+      src="https://static.yzkimage.com/h5/images/ico3@2x.png"></image>
+      <text class="top" wx:if="{{index>3}}">{{index}}</text>
+    </view>
+  </view>
+
+
+</scroll-view>

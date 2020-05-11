@@ -1,0 +1,95 @@
+.baoxiaoxiju{
+  position: relative;
+  width: 100%;
+  height: 1020rpx;
+  margin-top: 40rpx;
+}
+.baoxiaoxiju .title{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 92rpx;
+}
+.baoxiaoxiju .title .title-center{
+  position: absolute;
+  width: 100%;
+  height: 52rpx;
+  top: 20rpx;
+}
+.baoxiaoxiju .title .title-center .title-title{
+  position: relative;
+  margin-left: 2.4%;
+  font-weight: 700;
+  font-size: 32rpx;
+  color: #333;
+}
+.baoxiaoxiju-cartoon{
+  position: absolute;
+  top: 92rpx;
+  width: 100%;
+  height: 840rpx;
+  overflow: hidden;
+}
+.baoxiaoxiju-cartoon .cartoon-item{
+  width: 32.7%;
+  height: 420rpx;
+  margin-right: 0.95%;
+  float: left;
+  position: relative;
+}
+.baoxiaoxiju-cartoon :nth-child(3),:nth-child(6){
+  margin-right: 0;
+}
+.baoxiaoxiju-cartoon :nth-child(6){
+  margin-right: 0;
+}
+.baoxiaoxiju-cartoon .cartoon-item .cartoon-img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 317rpx;
+}
+.baoxiaoxiju-cartoon .cartoon-item .cartoon-item-title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 103rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+.baoxiaoxiju-cartoon .cartoon-item .cartoon-item-title .cartoon-name{
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #333;
+}
+.baoxiaoxiju-cartoon .cartoon-item .cartoon-item-title .cartoob-collection{
+  font-size: 24rpx;
+  color: #aaa;
+}
+.baoxiaoxiju-btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 88rpx;
+}
+.baoxiaoxiju .more,.change{
+  width: 45%;
+  box-sizing: border-box;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 2rpx solid rgb(204,204,204);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+  color: #333;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+}
+.baoxiaoxiju .more-img,.change-img{
+  width: 24rpx;
+  height: 24rpx;
+}

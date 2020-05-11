@@ -1,0 +1,10 @@
+<scroll-view class="more-scroll" scroll-y="true" refresher-enabled="true">
+    <view class="more-item" wx:for="{{cartoonData}}" 
+    bindtap="imgClick" data-url="{{item.url}}"
+    wx:key="url" wx:if="{{index>0}}">
+      <image src="{{'https://images.weserv.nl/?url='+item.cover}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+</scroll-view>
+
+

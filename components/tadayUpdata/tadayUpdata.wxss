@@ -1,0 +1,101 @@
+.taday-updata{
+  position: relative;
+  width: 100%;
+  height: 812rpx;
+  margin-top: 40rpx;
+}
+.taday-updata .title{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 92rpx;
+}
+.taday-updata .title .title-center{
+  position: absolute;
+  width: 100%;
+  height: 52rpx;
+  top: 20rpx;
+}
+.taday-updata .title .title-center .title-title{
+  position: relative;
+  margin-left: 2.4%;
+  margin-right: 2.4%;
+  font-weight: 700;
+  font-size: 32rpx;
+  color: #333;
+}
+.taday-updata .title .title-center .tips{
+  font-size: 24rpx;
+  color: #666;
+}
+.taday-updata-cartoon{
+  position: absolute;
+  top: 92rpx;
+  width: 100%;
+  height: 720rpx;
+}
+.taday-updata-cartoon .background-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  filter: blur(4rpx);
+}
+.taday-updata-cartoon .background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 7, 102, 0.6);
+}
+.taday-updata .taday-upadta-scroll{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.taday-updata .cartoon-item{
+  width: 234rpx;
+  height: 344rpx;
+  margin-left: 8rpx;
+  margin-right: 8rpx;
+  margin-top: 30rpx;
+  display:inline-block;
+  position: relative;
+}
+.taday-updata-cartoon .cartoon-item .cartoon-img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 234rpx;
+}
+.taday-updata-cartoon .cartoon-item .cartoon-item-title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 96rpx;
+  text-align: center;
+}
+.taday-updata-cartoon .cartoon-item .cartoon-item-title .cartoon-name{
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #fff;
+}
+.taday-updata-cartoon .cartoon-item .cartoon-item-title .cartoob-collection{
+  font-size: 22rpx;
+  color: #fff;
+}
+.cartoon-second{
+  left: 0;
+  margin-top: -30rpx;
+}
